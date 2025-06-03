@@ -1,7 +1,7 @@
 .area-com-imagem {
       width: 100%;
       height: 500px;
-      background-image: url('IMG/fundopoke.png');
+      background-image: url('fundopoke.png');
       background-size: cover;
       background-position: center;
 }
