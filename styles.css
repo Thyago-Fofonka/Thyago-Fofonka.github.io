@@ -1,0 +1,203 @@
+.area-com-imagem {
+      width: 100%;
+      height: 500px;
+      background-image: url('IMG/fundopoke.png');
+      background-size: cover;
+      background-position: center;
+}
+.secao-jogo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin: 40px 0;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+.secao-jogo.reverso {
+  flex-direction: row-reverse;
+}
+
+.secao-jogo .texto {
+  flex: 1 1 50%;
+  color: black;
+  font-family: Georgia;
+  word-spacing: 3px;
+  text-align: justify;
+  min-width: 300px;
+}
+
+.secao-jogo img {
+  flex: 1 1 40%;
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  min-width: 280px;
+}
+
+hr {
+  border: none;           
+  height: 4px;
+  background: #f4c430;
+}
+
+h2{
+    font-family: verdana;
+}
+
+/* Começo da navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: black;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  gap: 20px;
+}
+.navbar a {
+  color: white;
+  padding: 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+.navbar a:hover {
+  background-color: #444;
+  border-radius: 10px;
+}
+.logo-navbar {
+  height: 40px;
+  width: auto;
+}
+.navbar-titulo {
+  color: white;
+  font-family: Verdana;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  flex: 1;
+}
+.navbar-links {
+  display: flex;
+  gap: 10px;
+}
+.navbar-links a {
+  color: white;
+  padding: 10px 7px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+.navbar-links a:hover {
+  background-color: #444;
+  border-radius: 10px;
+}
+body {
+  padding-top: 20px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+}
+/* Fim da navbar */
+#creditos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  border: none;
+}
+
+.footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+  font-family: Verdana, sans-serif;
+  font-size: 14px;
+  margin-top: 40px;
+}
+.footer a {
+  color: #f4c430;
+  text-decoration: none;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .navbar-titulo {
+    text-align: left;
+    font-size: 16px;
+    margin: 10px 0;
+  }
+
+  .secao-jogo {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .secao-jogo.reverso {
+    flex-direction: column;
+  }
+
+  .secao-jogo .texto {
+    text-align: justify;
+    font-size: 14px;
+  }
+
+  .secao-jogo img {
+    max-width: 90%;
+    height: auto;
+  }
+
+  iframe {
+    height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-titulo {
+    font-size: 14px;
+  }
+
+  .navbar a {
+    font-size: 12px;
+  }
+
+  .secao-jogo .texto {
+    font-size: 13px;
+  }
+
+  .secao-jogo img {
+    max-width: 100%;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+  .footer {
+    font-size: 12px;
+    padding: 15px 5px;
+  }
+}
